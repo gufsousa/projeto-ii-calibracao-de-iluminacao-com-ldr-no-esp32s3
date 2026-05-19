@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Gustavo Fernandes",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp32",
+      "top": 9.42,
+      "left": -53.03,
+      "attrs": { "flashSize": "8" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 22.4,
+      "left": -373.6,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "$serialMonitor:RX", "esp32:TX", "", [] ],
+    [ "$serialMonitor:TX", "esp32:RX", "", [] ],
+    [ "esp32:4", "ldr1:AO", "green", [ "h-57.65", "v-162.5" ] ],
+    [ "esp32:3V3.1", "ldr1:VCC", "red", [ "v0" ] ],
+    [ "ldr1:GND", "esp32:GND.1", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}

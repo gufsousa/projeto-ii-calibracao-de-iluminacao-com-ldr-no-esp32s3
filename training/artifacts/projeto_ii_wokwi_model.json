@@ -1,0 +1,8 @@
+{
+  "weight": 1.416002500766108,
+  "bias": 4.632092580620893,
+  "rmse": 579.2150414711068,
+  "mape_percent": 4.093443069076874,
+  "samples": 19,
+  "source": "C:\\Projetos\\IA-EMBARCADA\\wolwi-photoresitor-sensor\\training\\artifacts\\wokwi_training_dataset.csv"
+}
