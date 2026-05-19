@@ -59,8 +59,8 @@ dist/
 # Virtual environment folders
 venv/
 .venv/
+.venv-tf/
 env/
-docs/
 # Language Servers
 .clangd/
 .ccls-cache/

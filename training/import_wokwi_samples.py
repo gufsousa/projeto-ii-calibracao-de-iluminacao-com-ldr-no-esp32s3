@@ -20,6 +20,10 @@ def build_features(df: pd.DataFrame) -> pd.DataFrame:
     result["percentual_adc"] = result["percentual_adc"].astype(float)
     result["lux_estimado"] = result["lux_estimado"].astype(float)
     result["ratio_feature"] = result["adc_raw"] / (4095.0 - result["adc_raw"].clip(upper=4094.0))
+    result["log_inverse_ratio_feature"] = np.log(
+        (4095.0 - result["adc_raw"].clip(lower=1.0, upper=4094.0))
+        / result["adc_raw"].clip(lower=1.0, upper=4094.0)
+    )
     result["log_lux_referencia"] = np.log1p(result["lux_referencia"])
     return result
 

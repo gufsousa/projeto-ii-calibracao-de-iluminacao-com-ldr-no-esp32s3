@@ -1,8 +1,12 @@
 {
-  "weight": 1.416002500766108,
-  "bias": 4.632092580620893,
-  "rmse": 579.2150414711068,
-  "mape_percent": 4.093443069076874,
+  "model_type": "tflite_micro_float32_dense",
+  "epochs": 1500,
+  "rmse": 579.1741943359375,
+  "mape_percent": 4.093482717871666,
   "samples": 19,
-  "source": "C:\\Projetos\\IA-EMBARCADA\\wolwi-photoresitor-sensor\\training\\artifacts\\wokwi_training_dataset.csv"
+  "tflite_model_size_bytes": 1072,
+  "input_dtype": "float32",
+  "output_dtype": "float32",
+  "source": "C:\\Projetos\\IA-EMBARCADA\\wolwi-photoresitor-sensor\\training\\artifacts\\wokwi_training_dataset.csv",
+  "tflite_path": "C:\\Projetos\\IA-EMBARCADA\\wolwi-photoresitor-sensor\\training\\artifacts\\ldr_lux_model.tflite"
 }
